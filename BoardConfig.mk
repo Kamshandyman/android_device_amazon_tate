@@ -55,3 +55,14 @@ TW_BRIGHTNESS_PATH := /sys/class/backlight/lcd-backlight/brightness
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/omap/omap_temp_sensor.0/temp1_input"
 TW_NO_USB_STORAGE := true
 TW_EXCLUDE_SUPERSU := true
+
+# Bliss Configs
+TARGET_TC_ROM := 4.9
+TARGET_TC_KERNEL := 4.8
+BLISS_O3 := false
+BLISS_STRICT := false
+BLISS_GRAPHITE := false
+BLISS_KRAIT := false
+BLISS_PIPE := false
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
