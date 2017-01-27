@@ -46,10 +46,12 @@ BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_FOLDER)/boot.mk
 
 # Recovery/TWRP Config
-TARGET_RECOVERY_FSTAB = $(DEVICE_FOLDER)/fstab.tate
-RECOVERY_FSTAB_VERSION = 2
+TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/fstab.tate
+TARGET_NOT_USE_GZIP_RECOVERY_RAMDISK := true
+RECOVERY_FSTAB_VERSION := 2
 TARGET_OTA_ASSERT_DEVICE := blaze_tablet,bowser,tate
-DEVICE_RESOLUTION := 800x1280
+TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := /sys/class/backlight/lcd-backlight/brightness
-TW_NO_SCREEN_BLANK := true
-TW_NO_SCREEN_TIMEOUT := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/platform/omap/omap_temp_sensor.0/temp1_input"
+TW_NO_USB_STORAGE := true
+TW_EXCLUDE_SUPERSU := true
