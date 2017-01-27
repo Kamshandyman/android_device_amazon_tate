@@ -42,6 +42,8 @@ $(INSTALLED_BOOTIMAGE_TARGET): \
 #	$(hide) $(call assert-max-image-size,$@, \
 #		$(BOARD_BOOTIMAGE_PARTITION_SIZE),raw)
 
+RECOVERY_PATCH_INSTALL := NULL
+
 $(INSTALLED_RECOVERYIMAGE_TARGET): \
 		$(MKBOOTIMG) $(recovery_ramdisk) $(recovery_kernel) \
 		$(BOWSER_BOOTLOADER)
