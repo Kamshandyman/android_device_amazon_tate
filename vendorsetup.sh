@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_tate-eng
-add_lunch_combo cm_tate-userdebug
+add_lunch_combo candy_tate-userdebug
+add_lunch_combo aosp_tate-userdebug
