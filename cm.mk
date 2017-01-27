@@ -23,6 +23,13 @@ $(call inherit-product, device/amazon/bowser-common/cm.mk)
 TARGET_SCREEN_WIDTH := 480
 TARGET_SCREEN_HEIGHT := 800
 
+# Exclude CM custom off-mode charger
+WITH_CM_CHARGER := false
+
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 PRODUCT_NAME := cm_tate
 PRODUCT_RELEASE_NAME := KindleFireHD
 
