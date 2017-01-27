@@ -1,5 +1,6 @@
 on early-init
     loglevel 7
+    setenforce permissive
 
 on init
     insmod /vendor/firmware/atmel_mxt_ts.ko
