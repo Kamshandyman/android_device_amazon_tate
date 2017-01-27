@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The Android Open Source Project
+# Copyright (C) 2016 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-add_lunch_combo aosp_tate-userdebug
-add_lunch_combo omni_tate-userdebug
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 640x362
+
+# Inherit some common OMNI stuff.
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
+
+# Inherit device configuration for bowser
+$(call inherit-product, device/amazon/tate/aosp_tate.mk)
+
+PRODUCT_NAME := omni_tate
+PRODUCT_RELEASE_NAME := KindleFireHD

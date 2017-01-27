@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/full_tate.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_tate.mk \
+                     $(LOCAL_DIR)/omni_tate.mk
